@@ -1,0 +1,75 @@
+/* fonts */
+@font-face {
+  font-family: "arvo";
+  src: url(../fonts/Arvo/Arvo-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "open sans";
+  src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+/* css vars */
+:root {
+  --arvo-font: "arvo";
+  --mont-font: "montserrat";
+  --open-font: "open sans";
+  --letter-spacing: 2px;
+  --mini-heading-color: #9fa3a7;
+  --link-color1: #27b9c2;
+  --main-grey-bg: #f7f8f9;
+}
+
+/* learn more style */
+.learn-more {
+  background-color: var(--main-grey-bg);
+}
+.inner-learn-more div:first-child,
+.inner-ip .ip-content div:first-child {
+    font-family: var(--mont-font);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--mini-heading-color);
+    letter-spacing: var(--letter-spacing);
+    padding-bottom: 20px;
+}
+.inner-learn-more h1 {
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44.8px;
+  padding-bottom: 4px;
+}
+.inner-learn-more a {
+    font-family: var(--open-font);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--link-color1);
+}
+
+/* iphone style */
+.ip-content h3{
+    font-family: var(--arvo-font);
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0 0 20px;
+    font-weight: 400;
+}
+.inner-ip .ip-content div:last-child{
+    color: var(--mini-heading-color);
+    font-family: var(--open-font);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
