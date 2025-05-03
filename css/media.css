@@ -1,3 +1,92 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 760px) {
+    /* ip media */
+    .inner-ip {
+        display: flex;
+    flex-direction: row;
+}
+  /* pc media */
+  .inner-pc {
+      padding-top: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+  .inner-pc .pc-content {
+    width: 100%;
+    padding-bottom: 0;
+}
+  .inner-pc .pc-img-and-content h3 {
+    width: 50%;
+  }
+  .inner-pc .pc-img,
+  .inner-pc .pc-img img {
+    width: 120%;
+}
+.inner-pc .pc-img {
+    margin-bottom: -30px;
+}
 
+/* ipad media */
+.inner-ipad h3 {
+    text-align: center;
+    color: white;
+    margin: 60px 0 30px;
+    width: 70%;
+    justify-self: center;
+}
+
+
+/* tv media */
+.inner-tv {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* grid media */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+    "learn learn"
+    "ip ip"
+    "key controller"
+    "pc pc"
+    "twitter desk"
+    "ipad desk"
+    "pop pop"
+    "tv tv";
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-areas:
+          "ip ip learn learn"
+          "key pc pc desk"
+          "controller ipad ipad desk"
+          "twitter pop tv tv";
+      }
+    .inner-learn-more{
+        justify-self: center;
+        margin-top: 50px;
+    }
+    .pc{
+        overflow: hidden;
+    }
+    .pc-img{
+        transform: translateY(30px);
+    }
+    .desk{
+        overflow: hidden;
+    }
+    .inner-popular{
+        transform: translateY(100px);
+    }
 }
